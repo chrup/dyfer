@@ -1,6 +1,6 @@
 # dyfer
 
-dyfer is a simple bash script created with the idea of reducing size of deployment packages that needs to be sent through slow networks, good for artifacts that consists from large number of files, and not all are changed with the next deployment. Script compares two packages/directories, finds differences and creates package consisting only from changed files.
+dyfer is a bash script created by the need for reducing size of deployment packages, which are sent through slow network connections, it is good for artifacts that consists from large number of files, and not all are changed between deployments. Script compares two archives/packages/directories, finds differences based on file location and its sha1sum, then creates package consisting only from changed files.
 
 **It is not finished yet, thus you may use it only on your own risk**
 ## TODO list
@@ -10,7 +10,7 @@ dyfer is a simple bash script created with the idea of reducing size of deployme
 - [ ] create deployment script
 - [ ] implement verification of input (for user errors)
 - [ ] perform extended  tests
-- [ ] create documentation
+- [ ] create good documentation
 
 ## Usage
 
@@ -19,6 +19,10 @@ dyfer is a simple bash script created with the idea of reducing size of deployme
    -n= --newpackage=
    -o= --oldpackage=
    -d --delete
+
+## Licensing
+
+You may use my script on GPL licensing rules.
 
 ## Contact
 You can mail me rgrubba@gmail.com or reach through linkedin.
