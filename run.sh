@@ -39,11 +39,18 @@ do
 	-d|--delete)
 		DELETE=1
         ;;
-        -h)
+        -h|--help|*)
         	usage 
+		exit 1
         ;;
   esac
 done
+
+if [ $# -eq 0 ]
+then
+	usage
+	exit 1
+fi
 }
 
 function check_type {
